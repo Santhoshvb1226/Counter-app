@@ -1,0 +1,55 @@
+.counter {
+  width: 340px;
+  max-width: 90vw;
+  padding: 32px 24px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(30, 41, 59, 0.12);
+  text-align: center;
+}
+
+.counter__title {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+  color: #1e293b;
+}
+
+.counter__value {
+  margin: 8px 0;
+  font-size: 5rem;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.counter__message {
+  margin: 0 0 16px;
+  color: #b45309;
+  font-weight: 600;
+}
+
+.counter__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.1s ease, opacity 0.2s ease;
+}
+
+.btn:hover:not(:disabled) { transform: translateY(-2px); }
+.btn:focus-visible { outline: 3px solid #93c5fd; outline-offset: 2px; }
+.btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.btn--increment { background: #16a34a; }
+.btn--decrement { background: #dc2626; }
+.btn--reset { background: #475569; }
